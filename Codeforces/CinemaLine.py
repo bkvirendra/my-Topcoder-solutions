@@ -8,30 +8,35 @@ def main():
 
     values = fun()
 
-    change = 0
+    change25 = 0
+    change50 = 0
 
     for i in range(0, n[0]):
         value = values[i]
 
         if value == 25:
-            change += 1
+            change25 += 1
 
         if value == 50:
-            if change == 0:
+            if change25 == 0:
                 print "NO"
                 return
             else:
-                change -= 1
+                change25 -= 1
+                change50 += 1
 
         if value == 100:
-            if change < 3 or change == 0:
+            if change50 == 0 or change25 < 3:
                 print "NO"
                 return
             else:
-                change -= 3
+                if change50 > 0 and change25 > 0:
+                    change50 -= 1
+                    change25 -= 1
+                else:
+                    change25 -= 3
 
-    if change >= 0:
-        print "YES"
+    print "YES"
     return
 
 main()
