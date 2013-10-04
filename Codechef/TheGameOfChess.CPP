@@ -4,16 +4,16 @@
 using namespace std;
 
 int main() {
-    int T;
+    unsigned long int T;
     cin >> T;
 
     vector<int> arr;
 
     for (int t = 0; t < T; ++t) {
-        int n; // players
+        unsigned long int n; // players
         cin >> n;
 
-        int passes = 0; // no. of passes to be given
+        unsigned long int passes = 0; // no. of passes to be given
 
         while(1) {
             if (n <= 2) {
