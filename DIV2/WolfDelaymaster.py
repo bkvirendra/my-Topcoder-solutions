@@ -46,4 +46,4 @@ class WolfDelaymaster(object):
 
 
 a = WolfDelaymaster()
-print a.check("wwwooolllfffwolfwolfwwwooolllfffwolff")
+print a.check("wwolfwoollff")
