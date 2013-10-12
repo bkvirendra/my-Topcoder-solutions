@@ -3,6 +3,7 @@
 # C extensions
 *.so
 *.out
+.idea/
 
 # Packages
 *.egg
