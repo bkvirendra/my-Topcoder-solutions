@@ -7,4 +7,5 @@ class LittleElephantAndBooks(object):
 
 
 a = LittleElephantAndBooks()
+
 print a.getNumber((74, 86, 32, 13, 100, 67, 77), 2)
